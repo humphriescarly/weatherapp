@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href='https://fonts.googleapis.com/css?family=Pacifico|Josefin+Slab:100' rel='stylesheet' type='text/css'>
+    <link rel="icon" href="images/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Temperature Converter</title>
+    <meta charset='utf-8'>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link href='css/style.css' rel='stylesheet'>
+  </head>
+  
+  <body>
+    <div class="container">
+      
+      <h1>Celsius to Fahrenheit Converter</h1>
+
+      <div class="gauge">
+        <h2 id="resultFahrenheit"><span></span>&#176;F</h2>
+        <div class="dialHot"></div>
+        <div class="dialWarm"></div>
+        <div class="dialCold"></div>
+        <div class="dialInitial"></div>
+      </div>
+
+      <div class="resultContainer">
+        <p>
+          <span>Enter a celsius here:  </span>
+          <input id="getCelsius" />
+        </p>
+        <button id="calculate">Calculate</button>
+      </div>
+
+    </div>
+    <script src="js/jquery-2.1.4.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>

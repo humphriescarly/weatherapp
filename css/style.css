@@ -1,0 +1,174 @@
+/*
+Project Name: Weather App
+Author: Carly Humphries
+*/
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+.alignright {
+	float: right;
+	padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+	float: left;
+	padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+body {
+
+	font-family: 'Josefin Slab', serif;
+	font-size: 1em;
+	margin: 0 auto;
+	width: 100%;
+	text-align: center;
+	background-color: #f1f1f2;
+}
+
+.container {
+	margin: 20px auto;
+	background-color: #e3f2e3;
+	width: 50%;
+	padding: 15px;
+	border-radius: 20px;
+	border: 1px solid #c1c1c1;
+}
+
+h1 {
+	font-family: 'Pacifico', serif;
+	font-size: 2.5em;
+	padding: 20px 0;
+}
+
+h2 {
+	font-family: 'Josefin Slab', serif;
+	font-size: 1em;
+	padding: 20px 0;
+	display: inline-block;
+}
+
+p {
+	padding: 10px;
+}
+
+.gauge {
+	width: 70px;
+	height: 300px;
+	border-top-right-radius: 30px;
+	border-top-left-radius: 30px;
+	background-color: #FFFFE0;
+	margin: 0 auto 20px;
+	border: 1px solid #c1c1c1;
+}
+
+.dialInitial {
+	width: 10px;
+	height: 10px;
+	margin: 0 auto;
+	display: block;
+	background-color: #000;
+	border-radius: 50px; 
+}
+
+.dialCold {
+	width: 5px;
+	height: 72px;
+	margin: 0 auto;
+	display: block;
+	background-color: none;
+	bottom: 0;
+	border-bottom: 1px solid #c1c1c1;
+	border-right: 1px solid #c1c1c1;
+	border-left: 1px solid #c1c1c1;
+	border-bottom-right-radius: 3px;
+	border-bottom-left-radius: 3px;
+}
+
+.dialWarm {
+	width: 5px;
+	height: 72px;
+	margin: 0 auto;
+	display: block;
+	background-color: none;
+	border-right: 1px solid #c1c1c1;
+	border-left: 1px solid #c1c1c1;
+}
+
+.dialHot {
+	width: 5px;
+	height: 72px;
+	margin: 0 auto;
+	display: block;
+	background-color: none;
+	border-top: 1px solid #c1c1c1;
+	border-right: 1px solid #c1c1c1;
+	border-left: 1px solid #c1c1c1;
+	border-top-right-radius: 3px;
+	border-top-left-radius: 3px;
+}
+
+.resultContainer {
+	text-align: center;
+	margin: 0 auto;
+	border-radius: 20px;
+	min-width: 55px;
+	background-color: #FFFFE0; 
+	border: 1px solid #c1c1c1;
+	margin-bottom: 20px;
+}
+
+button {
+	background-color: #e7cdd1;
+	font-family: 'Josefin Slab', serif;
+	font-size: 1em;
+	border: none;
+	border-radius: 8px;
+	margin-bottom: 5px;
+	outline: none;
+}
+
+.iceAge1 {
+	background-color: #90b9ff;
+}
+
+.iceAge2 {
+	background-color: #f4b667;
+}
+
+.iceAge3 {
+	background-color: #f46767;
+}
+
+@media screen and (max-width:480px) {
+
+	h1 {
+		font-size: 1.3em;
+	}
+
+}
